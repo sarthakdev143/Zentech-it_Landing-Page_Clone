@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #eee;
+}
+
+#navbar-wrapper {
+    width: 100%;
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    header {
+        width: 100%;
+        height: 8rem;
+        background: #F3F5F4;
+        border-bottom: 0.1rem solid #dcdcdc;
+
+        nav {
+            width: inherit;
+            height: inherit;
+
+            section:nth-child(1) {
+                width: 23%;
+                height: 100%;
+                border-right: 0.1rem solid #dcdcdc;
+                padding-right: 2rem;
+                justify-content: right;
+
+                figure {
+                    width: fit-content;
+                    height: 5.6rem;
+                    overflow: hidden;
+                }
+            }
+
+            section:nth-child(2) {
+                width: 63%;
+                height: 100%;
+                justify-content: right;
+                padding-right: 4rem;
+                border-right: 0.1rem solid #dcdcdc;
+
+                ul li {
+
+                    &#dropdown {
+                        margin-right: 1rem;
+                        position: relative;
+
+                        #dropdown-content {
+                            position: absolute;
+                            width: 17rem;
+                            height: fit-content;
+                            display: none;
+                            opacity: 0;
+                            background: #222222;
+                            transition: all ease 0.3s;
+
+                            li a {
+                                border-bottom: 0.1rem solid #444;
+                                color: #eee;
+                                padding: 0.8rem 2rem;
+                                width: 100%;
+                                height: fit-content;
+                                display: flex;
+                                align-items: center;
+
+                                &:hover {
+                                    color: goldenrod;
+                                }
+                            }
+                        }
+
+                        &:hover #dropdown-content {
+                            display: block;
+                            animation: dropdown 0.3s forwards 1ms;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        font-weight: bolder;
+                        font-size: 1.2rem;
+                        color: #444;
+                        transition: all ease 0.1s;
+
+                        i {
+                            position: absolute;
+                            font-weight: 100;
+                            font-size: 2rem;
+                        }
+
+                        &:hover {
+                            color: #999;
+                        }
+                    }
+                }
+            }
+
+            section:nth-child(3) {
+                width: 14%;
+                height: 100%;
+                justify-content: left;
+                padding-left: 3rem;
+            }
+        }
+    }
+}
+
+
+@keyframes dropdown {
+    to {
+        opacity: 1;
+    }
+}

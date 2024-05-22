@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header:nth-child(1) {
+    width: 100%;
+    height: 4rem;
+    background: #006633;
+
+    #top-navbar-wrapper {
+        width: 92%;
+        height: 100%;
+        /* background: red; */
+        justify-content: right;
+        color: #eee;
+        font-weight: bold;
+
+        ul {
+            &:nth-child(1) li i {
+                transition: all ease 0.1s;
+
+                &:hover {
+                    opacity: 0.9;
+                    font-size: 1.5rem;
+                }
+            }
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                border-right: 0.1rem solid;
+                padding-right: 2rem;
+                margin-right: 2rem;
+            }
+
+            li {
+                font-size: 1.1rem;
+
+                i {
+                    font-size: 1.3rem;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
