@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#footer {
+    width: 100%;
+    height: 47rem;
+
+    #part-1 {
+        width: 100%;
+        height: 37rem;
+        background: #000;
+        justify-content: space-around;
+        padding: 0 10rem;
+
+        article {
+            width: 50rem;
+            height: 29rem;
+            background: #1A1A1A;
+            justify-content: center;
+            padding: 0 4rem;
+
+            figure {
+                width: fit-content;
+                height: 5.6rem;
+                overflow: hidden;
+
+                #logo {
+                    filter: brightness(100);
+                }
+            }
+
+            p {
+                color: #aaa;
+                font-size: 1.37rem;
+                font-weight: 400;
+            }
+
+            &:after {
+                content: '';
+                width: 100%;
+                height: 0.9rem;
+                background: #006633;
+                position: absolute;
+                left: 0;
+                top: -0.9rem;
+            }
+        }
+
+        #get-in-touch {
+            width: 50rem;
+            height: 29rem;
+            justify-content: space-between;
+            padding-top: 3.5rem;
+            color: #eee;
+            padding-left: 1rem;
+
+            ul {
+                a {
+                    text-decoration: none;
+                }
+
+                li {
+                    cursor: pointer;
+                    gap: 1rem;
+                    width: fit-content;
+
+                    i {
+                        padding: 0.75rem;
+                        background: #222;
+                        display: grid;
+                        place-items: center;
+                        font-size: 1.5rem;
+                        font-weight: 100;
+                        position: relative;
+                        z-index: 10;
+                        transition: all ease 0.1s;
+                        color: #eee;
+                    }
+
+                    span {
+                        color: #eee;
+                        font-size: 1.2rem;
+                    }
+
+                    &:hover {
+                        #mail {
+                            background: grey;
+                        }
+
+                        #twitter {
+                            background: rgb(0, 157, 255);
+                        }
+
+                        #fb {
+                            background: #3B5998;
+                        }
+
+                        #linkedin {
+                            background: #006E99;
+                        }
+
+                        #ig {
+                            background: rgb(241, 44, 77);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #part-2 {
+        width: 100%;
+        height: 10rem;
+        background: #1A1A1A;
+
+        #container {
+            width: 84%;
+            height: 100%;
+
+            ul {
+                width: 100%;
+                height: 100%;
+
+                li {
+                    color: #eee;
+                    font-size: 1.2rem;
+
+                    a {
+                        color: #999;
+                        text-decoration: none;
+                        transition: all ease 0.2s;
+
+                        &:hover {
+                            color: #00ff80;
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        margin: 0 1.5rem;
+                        color: #444;
+                        font-weight: 100;
+                    }
+
+                    a::before,
+                    &:nth-child(3)::before,
+                    &:nth-child(5)::before,
+                    &:nth-child(7)::before {
+                        content: '';
+                        width: 0;
+                        transition: all ease 0.3s;
+                        height: 0.1rem;
+                        background: #eee;
+                        position: absolute;
+                        bottom: -0.2rem;
+                    }
+
+                    a:hover::before,
+                    &:nth-child(1):hover::before,
+                    &:nth-child(3):hover::before,
+                    &:nth-child(5):hover::before,
+                    &:nth-child(7):hover::before {
+                        width: 100%;
+                    }
+                }
+            }
+
+            a {
+                text-decoration: none;
+
+                span {
+                    color: #999;
+                    cursor: pointer;
+                    width: 3rem;
+                    height: 3rem;
+                    background: #2e2e2e;
+                    display: grid;
+                    place-items: center;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

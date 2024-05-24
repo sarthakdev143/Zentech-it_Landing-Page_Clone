@@ -1,0 +1,56 @@
+#cards {
+    width: 86%;
+    height: fit-content;
+    flex-grow: 1;
+    justify-content: space-between;
+
+    #card {
+        width: calc(86%/5);
+        height: fit-content;
+
+        figure {
+            width: 100%;
+            height: 22rem;
+            /* background: red; */
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                /* background: green; */
+                height: 50%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            figcaption {
+                height: 50%;
+                justify-content: center;
+                /* background: lightseagreen; */
+
+                span {
+                    font-size: 2rem;
+                    color: #006633;
+                    font-weight: bolder;
+
+                    &::after {
+                        content: '';
+                        width: 5rem;
+                        height: 0.3rem;
+                        background: #006633;
+                        position: absolute;
+                        left: 22%;
+                        top: 50%;
+                    }
+                }
+            }
+        }
+
+        article {
+            p {
+                font-size: 1.4rem;
+                color: grey;
+            }
+        }
+    }
+}
