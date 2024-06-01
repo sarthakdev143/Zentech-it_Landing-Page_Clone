@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/sarthakdev143/Zentech-it_Clone/static/css/main.a9da8e91.css",
+    "main.js": "/sarthakdev143/Zentech-it_Clone/static/js/main.05e57b0d.js",
+    "static/js/453.a000676e.chunk.js": "/sarthakdev143/Zentech-it_Clone/static/js/453.a000676e.chunk.js",
+    "static/media/slick.svg": "/sarthakdev143/Zentech-it_Clone/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/sarthakdev143/Zentech-it_Clone/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/sarthakdev143/Zentech-it_Clone/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/sarthakdev143/Zentech-it_Clone/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/sarthakdev143/Zentech-it_Clone/index.html",
+    "main.a9da8e91.css.map": "/sarthakdev143/Zentech-it_Clone/static/css/main.a9da8e91.css.map",
+    "main.05e57b0d.js.map": "/sarthakdev143/Zentech-it_Clone/static/js/main.05e57b0d.js.map",
+    "453.a000676e.chunk.js.map": "/sarthakdev143/Zentech-it_Clone/static/js/453.a000676e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9da8e91.css",
+    "static/js/main.05e57b0d.js"
+  ]
+}
