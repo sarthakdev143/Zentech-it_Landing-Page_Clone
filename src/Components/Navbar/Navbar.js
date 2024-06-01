@@ -37,12 +37,12 @@ const Navbar = () => {
                     </section>
                     <section className='faic m-gap'>
                         {/* Search Icon */}
-                        <span class="material-symbols-outlined">
+                        <span class="search-icon pointer material-symbols-outlined">
                             search
                         </span>
 
                         {/* Menu Icon */}
-                        <span class="material-symbols-outlined">
+                        <span class="menu-icon pointer material-symbols-outlined">
                             menu
                         </span>
                     </section>
